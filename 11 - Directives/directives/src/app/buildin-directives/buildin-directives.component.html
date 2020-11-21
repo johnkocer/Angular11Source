@@ -1,0 +1,19 @@
+<div id='printDiv'>
+  <h3>ngif Directive</h3>
+  <div *ngIf="isShowHide">SHOW</div>
+  <div *ngIf="!isShowHide">HIDE</div>
+  <button (click)="toggleShowHide()">Toggle</button>
+  <hr />
+  <h3>ngFor Directive</h3>
+  <ul>
+    <li *ngFor="let item of persons">{{ item.name }}</li>
+  </ul>
+  <hr />
+  <h3>ngSwitch Directive</h3>
+  <p [ngSwitch]="status">
+    <span *ngSwitchCase="1"> One </span> <span *ngSwitchCase="2"> Two </span>
+    <span *ngSwitchDefault> Default: 0 </span>
+  </p>
+  <hr />
+</div>
+<button [printScreen]="'printDiv'"> Print</button>

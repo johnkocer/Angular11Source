@@ -1,0 +1,12 @@
+{
+  "/api/*": "/$1",
+  "/:resource/:id/show": "/:resource/:id",
+  "/GetEmployees": "/employees",
+  "/GetEmployee\\?id=:id": "/employees/:id",
+  "/GetEmployee/:id": "/employees/:id",
+  "/GetEmployeeByName/:name": "/employees?name_like=:name",
+  "/DeleteEmployee/:id": "/employees/:id",
+  "/AddEmployee/": "/employees",
+  "/UpdateEmployee/:id": "/employees/:id",
+  "/UpdateEmployee": "/employees/:resource/:id"
+}

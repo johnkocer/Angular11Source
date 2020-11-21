@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.paymentbody {
+  background-color: rgb(216, 235, 187);
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+  color: #b94a48;
+}
+
+.field-validation-valid {
+  display: none;
+}
+
+input.input-validation-error {
+  border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+  border: 0 none;
+}
+
+.validation-summary-errors {
+  color: #b94a48;
+}
+
+.validation-summary-valid {
+  display: none;
+}
+
+input.ng-invalid {
+  background-color: pink;
+}
+
+input.ng-valid {
+  background-color: lightgreen;
+}
+
+.memberTH {
+  display: inline-block;
+  width: 80px;
+  font-weight: normal;
+}
+
+.paymentTH {
+  font-weight: normal;
+}
+
+legend {
+  font-size: 0.75rem;
+  width: auto;
+  color: darkgreen;
+  font-weight: bold;
+  padding: 0 0.24rem;
+  margin-bottom: 0;
+  background-clip: rgb(15,195,219)
+}
+
+fieldset {
+  /*margin-inline-start: 2px;
+  margin-inline-end: 2px;*/
+  padding: 0.35rem 0.625rem 0.75rem;
+  background-color: rgb(216, 235, 187);
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
+}

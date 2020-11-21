@@ -1,0 +1,24 @@
+NgFor
+<hr>
+<ul>
+  <li *ngFor="let student of students">{{student.name}} </li>
+</ul>
+<br>
+
+NgIf
+<table>
+  <tr>
+    <th>Male Students</th>
+  </tr>
+  <tr *ngFor="let student of students">
+    <td *ngIf='student.gender == "male"'>{{student.name}}</td>
+    <td *ngIf='student.gender == "male"'>{{student.gender}}</td>
+  </tr>
+  <tr>
+    <th>Female Students</th>
+  </tr>
+  <tr *ngFor="let student of students">
+    <td *ngIf='student.gender != "male"'>{{student.name}}</td>
+    <td *ngIf='student.gender != "male"'>{{student.gender}}</td>
+  </tr>
+</table>

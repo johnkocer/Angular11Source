@@ -1,0 +1,30 @@
+<h2>Build In pipes : {{ "Welcome to Angular 7" | lowercase }}</h2>
+<hr />
+Name: Before Pipe: {{ name }} <br /><strong>After uppercase Pipe</strong>:
+{{ name | uppercase }}
+<hr />
+City: Before Pipe: {{ city }} <br /><strong> lowecase Pipe:</strong>
+{{ city | lowercase }}
+<hr />
+Date: Before Pipe: {{ todaysDate }} <br />After date Pipe:
+{{ todaysDate | date }}
+
+<hr />
+Price: Before Pipe: {{ price }} <br /><strong>After currency Pipe:</strong>
+{{ price | currency }}
+<hr />
+City: Before Pipe: {{ city }} <br />After lowecasePipe:
+{{ city | lowercasePipe }}
+<hr />
+
+Persons <strong>json</strong> {{ persons | json }} <br />
+<hr />
+<strong>Custom Name-Gender Pipe</strong>
+<ul>
+  <li *ngFor="let person of persons">{{ person | name }}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let person of persons">{{ person | name: false }}</li>
+</ul>
+

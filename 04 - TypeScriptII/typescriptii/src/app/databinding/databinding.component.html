@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+Interpolation
+<br>
+<img src='{{imagePath}}'/>
+<br>Property Binding
+<br>
+<img [src]='imagePath'/>
+<img bind-src='imagePath'/>
+<br>
+{{isDisabled}}
+<button (click)="togle()" [disabled]='isDisabled'>Click Me</button>
+<button (click)="togle()" bind-disabled='!isDisabled'>Click Me</button>

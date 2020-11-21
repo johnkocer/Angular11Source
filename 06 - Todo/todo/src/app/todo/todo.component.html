@@ -1,0 +1,29 @@
+<h2>My Todos</h2>
+<div>
+  <label>Item:
+    <input #itemName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(itemName.value); itemName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="todos">
+  <li *ngFor="let todo of todos" [class.selected]="todo === selectedTodo" (click)="onSelect(todo)">
+    <span class="badge">{{todo.id}}</span> {{todo.name}}
+  </li>
+</ul>
+
+<!-- <div *ngIf="selectedTodo" class="editTodo">
+  <fieldset>
+    <legend>{{selectedTodo.name | uppercase}} Details</legend>
+    <div>
+      <span>id: </span>{{selectedTodo.id}}
+      <label>Name:
+        <input class="todos" [(ngModel)]="selectedTodo.name" placeholder="name">
+      </label>
+    </div>
+  </fieldset>
+</div> -->
+<app-todo-detail [todo]="selectedTodo"></app-todo-detail>

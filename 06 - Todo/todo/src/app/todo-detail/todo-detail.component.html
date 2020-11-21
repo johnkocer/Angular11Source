@@ -1,0 +1,11 @@
+<div *ngIf="todo" class="editTodo">
+  <fieldset>
+    <legend>{{todo.name | uppercase}} Details</legend>
+    <div>
+      <span>id: </span>{{todo.id}}
+      <label>Name:
+        <input class="todos" [(ngModel)]="todo.name" placeholder="name">
+      </label>
+    </div>
+  </fieldset>
+</div>

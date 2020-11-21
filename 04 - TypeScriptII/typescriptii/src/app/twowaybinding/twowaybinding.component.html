@@ -1,0 +1,8 @@
+<input [value]='name' (input)='name = $event.target.value'>
+<br>
+You entered : {{name}}
+<hr>
+<input [(ngModel)]='name' >
+<br>
+You entered : {{name}}
+

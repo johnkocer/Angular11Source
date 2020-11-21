@@ -1,0 +1,21 @@
+<div class="for-screen">
+<fieldset>
+  <legend>Read Comments</legend>
+  <textarea id="commentsPrint"  class="table-responsive form-control form-control-sm" rows="6"  [(ngModel)]="printText" name="commentsRead">
+    One
+    two
+    three
+    ..
+    four
+    five
+  </textarea>
+</fieldset>
+</div>
+<button  type="button" class="btn-sm btn btn-secondary ml-1" ngbTooltip="Select to Print these comments" (click)="printComments('commentsPrint')" >PRINT</button>
+<div id="commentsPrint" >
+  <div id="commentsPrintTextarea" class="for-print" >
+    <h5 class="card-header">Comments title</h5>
+<hr>
+    {{printText}}
+  </div>
+</div>
