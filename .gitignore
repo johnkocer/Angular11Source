@@ -21,8 +21,8 @@ x64/
 x86/
 build/
 bld/
-bin/
-Bin/
+#bin/
+#Bin/
 obj/
 Obj/
 
