@@ -1,0 +1,58 @@
+<div id="summary" class="section panel panel-primary">
+  <h3 > Employee Summary</h3>
+  <div class="container">
+    <!-- {{employeeList | json}} -->
+    <br> Find Employee by Name: <input type="text" [(ngModel)]='findEmployee.name'  (keyup.enter)="employeeSeach()"/>
+  <button class="btn btn-sm btn-primary ml-1" (click)="employeeSeach()">Search</button>
+    <table class="table table-striped  table-hover table-sm p-0 table-bordered table-condensed" *ngIf="true">
+      <thead class="thead-light">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Salary</th>
+          <th>DepartmentId</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th> </th>
+          <th>
+            <input id="newName" [(ngModel)]='newEmployee.name' type="text" placeholder="newName" />
+          </th>
+          <th>
+            <input type="text" [(ngModel)]='newEmployee.gender' placeholder="newGender" />
+            <th>
+              <input type="text" [(ngModel)]='newEmployee.salary' placeholder="newSalary" />
+            </th>
+            <th>
+              <input type="text" [(ngModel)]='newEmployee.departmentId' placeholder="newdepartmentId" />
+            </th>
+            <th>
+              <button class="btn btn-sm btn-success" (click)="post(newEmployee)">Add </button>
+            </th>
+            <th></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of employeeList" >
+        <tr>
+          <td>{{item.id}} </td>
+          <td><input type="text" [(ngModel)]='item.name' /></td>
+          <td><input type="text" [(ngModel)]="item.gender" /></td>
+          <td><input type="text" [(ngModel)]="item.salary" /> </td>
+          <td><input type="text" [(ngModel)]="item.departmentId" /> </td>
+          <td>
+            <button class="btn btn-sm btn-success" (click)="put(item)">Update</button>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-danger" (click)="delete(item)">Remove</button>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <br> Find Employee Id: <input type="text" [(ngModel)]='findEmployee.id' />
+  <button class="btn btn-sm btn-primary ml-1" (click)="get()">Search</button>
+  <br> {{findEmployee | json}}
+</div>
+

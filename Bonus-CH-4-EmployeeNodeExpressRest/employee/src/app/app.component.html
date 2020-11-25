@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <nav >
+    <a [routerLink]="['/home']">
+      <span class='glyphicon glyphicon-home'></span> Home
+   </a> |
+    <a [routerLink]="['/employee']" routerLinkActive="active">
+       <span class='glyphicon glyphicon-home'></span> Employee
+    </a> |
+    <a [routerLink]="['/counter']" routerLinkActive="active">
+       <span class='glyphicon glyphicon-home'></span> Counter
+    </a> |
+    <a [routerLink]="['/fetch-data']" routerLinkActive="active">
+      <span class='glyphicon glyphicon-home'></span> Fetch Data
+   </a>
+  </nav>
+ <hr>
+<router-outlet></router-outlet>
+<hr>

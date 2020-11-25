@@ -1,0 +1,53 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ms. Nice",
+      "gender": "Male",
+      "salary": 10000,
+      "departmentId": 1
+    },
+    {
+      "id": 2,
+      "name": "Mr. Nice",
+      "gender": "Female",
+      "salary": 5000,
+      "departmentId": 1
+    },
+    {
+      "id": 3,
+      "name": "Narco",
+      "gender": "Male",
+      "salary": 8000,
+      "departmentId": 1
+    },
+    {
+      "id": 4,
+      "name": "Bombasto",
+      "gender": "Male",
+      "salary": 9000,
+      "departmentId": 1
+    },
+    {
+      "id": 5,
+      "name": "Celeritas",
+      "gender": "Male",
+      "salary": "100005",
+      "departmentId": 1
+    },
+    {
+      "id": 6,
+      "name": "James",
+      "gender": "Male",
+      "salary": "15000",
+      "departmentId": "6"
+    },
+    {
+      "name": "July",
+      "gender": "Female",
+      "salary": "2000",
+      "id": 7,
+      "departmentId": "1"
+    }
+  ]
+}

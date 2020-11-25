@@ -1,0 +1,28 @@
+{
+  "author": "John Kocer",
+  "email": "smartit.consultation@gmail.com",
+  "license": "MIT",
+  "books": {
+    "url": "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=john+kocer"
+  },
+  "twitter": "https://twitter.com/jkocer",
+  "linkedin": " https://www.linkedin.com/in/john-kocer-117a7662/",
+  "c-sharpcorner": "http://www.c-sharpcorner.com/members/john2098",
+  "name": "employeeapi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "lowdb": "^1.0.0",
+    "morgan": "~1.9.1",
+    "uuid": "^8.3.1"
+  }
+}
